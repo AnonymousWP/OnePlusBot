@@ -92,6 +92,30 @@ Note that however clearing warnings isn't logged in #mod-log channel unlike the 
     
 Normal users can check their own warnings by using `;warnings` command, which will tell them how many active and total warnings they have. If they wish to get the reasons as well they need to ask moderators to check for them as it was decided that for "privacy" we won't let other users know why a user was warned.
 
+### Update database
+
+In order to reload the cached info from the database, you'll have to use `;reloaddb`. Only Staff, Admins and Founders can succesfully execute this command.
+
+### updateLevels
+
+Sets the level at which a role is given. If no parameters are given, it shows the current role configuration. For example/reference: `;updatelevels [level = ] [roleId = ]` This action requires the admin OR founder role.
+
+### disableXpGain
+
+Enables/disables xp gain for a user. For example/reference: `disablexpgain  <user> <newValue>`. This action requires the admin OR founder role.
+
+### setupInfoPost
+
+Sets up the info post to let user self assign the roles as you can see in #info. When an infopost has been posted, it'll add specific reactions. If a user clicks the reaction (for example `7TP`, which is 7T Pro device), the bot will automatically give the user the 7T Pro role. For example/reference: `setupinfopost`. This action requires the admin OR founder role.
+
+### disableCommand
+
+Disables command in a specified channel group so certain roles can't use them anymore. For example/reference: `disablecommand  <commandName> <channelGroupName> <newValue>`. This action requires the admin OR founder role.
+
+### setNickname
+
+Changes the nickname of a given user, resets if empty. For example/reference: `setnickname  <user> [newNickname = ] `. This action requires the staff role.
+
 ### User info
 
 Display user information: status (offline/DND/idle/online), activity (Rich Presence state), Discord account registration date, join server date.\
