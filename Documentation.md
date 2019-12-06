@@ -94,7 +94,7 @@ Normal users can check their own warnings by using `;warnings` command, which wi
 
 ### Update database
 
-In order to reload the cached info from the database, you'll have to use `;reloaddb`. Only **Staff** can succesfully execute this command.
+In order to reload the cached info from the database, you'll have to use `;reloaddb`. This action requires the **Staf** role.
 
 ### roleLevel
 
