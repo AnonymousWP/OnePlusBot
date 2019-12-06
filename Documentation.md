@@ -94,27 +94,27 @@ Normal users can check their own warnings by using `;warnings` command, which wi
 
 ### Update database
 
-In order to reload the cached info from the database, you'll have to use `;reloaddb`. Only Staff, Admins and Founders can succesfully execute this command.
+In order to reload the cached info from the database, you'll have to use `;reloaddb`. Only **Staff** can succesfully execute this command.
+
+### roleLevel
+
+Sets the level at which a role is given. If no parameters are given, it shows the current role configuration. For example/reference: `;updatelevels [level = ] [roleId = ]` This action requires the **admin** or **founder** role.
 
 ### updateLevels
 
-Sets the level at which a role is given. If no parameters are given, it shows the current role configuration. For example/reference: `;updatelevels [level = ] [roleId = ]` This action requires the admin OR founder role.
+Re-evaluates the experience, levels and assigns the roles to the users (takes a long time, use with care). This action requires the **admin** or **founder** role.
 
 ### disableXpGain
 
-Enables/disables xp gain for a user. For example/reference: `disablexpgain  <user> <newValue>`. This action requires the admin OR founder role.
+Enables/disables xp gain for a user. For example/reference: `;disablexpgain  <user> <newValue>`. This action requires the **admin** or **founder** role.
 
 ### setupInfoPost
 
-Sets up the info post to let user self assign the roles as you can see in #info. When an infopost has been posted, it'll add specific reactions. If a user clicks the reaction (for example `7TP`, which is 7T Pro device), the bot will automatically give the user the 7T Pro role. For example/reference: `setupinfopost`. This action requires the admin OR founder role.
+Sets up the info post to let user self assign the roles as you can see in #info. When an infopost has been posted, it'll add specific reactions. If a user clicks the reaction (for example `7TP`, which is 7T Pro device), the bot will automatically give the user the 7T Pro role. For example/reference: `;setupinfopost`. This action requires the **admin** or **founder** role.
 
 ### disableCommand
 
-Disables command in a specified channel group so certain roles can't use them anymore. For example/reference: `disablecommand  <commandName> <channelGroupName> <newValue>`. This action requires the admin OR founder role.
-
-### setNickname
-
-Changes the nickname of a given user, resets if empty. For example/reference: `setnickname  <user> [newNickname = ] `. This action requires the staff role.
+Disables command in a specified channel group so certain roles can't use them anymore. For example/reference: `;disablecommand  <commandName> <channelGroupName> <newValue>`. This action requires the **admin** or **founder** role.
 
 ### User info
 
@@ -170,7 +170,7 @@ Elements can be added/edited/removed by using `;configurefaq` command (command c
 FAQ answers can be embeds, textposts, include images (need to provide an URL) and have an authorship attached to them following choices made at configuration.\
 Answers are configurable on a per channel basis.
 If embeds are chosen during configuration it is possible to set a custom color for them.\
-Once changes are made FAQ database need to be reloaded by using `;reloaddb` command (again staff only command).
+Once changes are made FAQ database need to be reloaded by using `;reloaddb` command (again **Staff** only command).
     
 Normal users can use `;faq module` to display answer related to the module.
     
